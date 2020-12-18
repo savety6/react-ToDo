@@ -5,13 +5,17 @@
 }
 body{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(35deg, rgb(0, 174, 255), rgb(197, 19, 197), rgb(255, 95, 2));
   background-size: 400% 400%;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: animbg 10s ease-in-out infinite;
+}
+h1{
+  margin-bottom: 50px;
+  text-align: center;
 }
 form{
   display: flex;
@@ -41,9 +45,15 @@ form .todo-btn:hover{
   margin-right: 10px;
 }
 form .filter-todo{
+  
   border: none;
   width: 120px;
   height: 40px;
+  background: rgba(255, 255, 255, 1);
+  outline: none;
+}
+.todo-container{
+  margin-bottom: 50px;
 }
 .todo{
   margin-top: 10px;
@@ -69,13 +79,22 @@ form .filter-todo{
 }
 .todo .done{
   background: chartreuse;
-  height: 90%;
+  height: 100%;
   width: 10%;
+  border:none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
 }
+
 .todo .trash{
   background: tomato;
-  height: 90%;
+  height: 100%;
   width: 10%;
+  border:none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
 }
 
 
